@@ -1,0 +1,111 @@
+/*
+
+    ./src/styles/page/page.module.scss
+
+    Copyright (C) 2022, Anokidev. This file is 
+    part of Anokidev's website. Anokidev's website 
+    is open-source and is licensed in MIT License.
+
+    This file is used to style the page component.
+
+*/
+
+.pageContainer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+
+    padding-left: 20%;
+    padding-right: 20%;
+
+    width: 100%;
+    
+    p {
+        
+        text-justify: distribute;
+
+    };
+
+    a {
+
+        color: white;
+        text-decoration: underline;
+
+        &:hover {
+            text-shadow: $text-shadow;
+        };
+
+    };
+
+    img {
+
+        height: 80%;
+        width: 100%;
+
+    };
+
+};
+
+.buttonContainer {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30%;
+    height: 20%;
+
+    background-color: $dark-color;
+
+    &:hover {
+        background-color: $hover-color;
+    };
+
+};
+
+.headingContainer {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+};
+
+.centerContainer {
+
+    display: flex;
+    justify-content: center;
+
+};
+
+@media (max-width: 600px) {
+    .pageContainer {
+        font-size: 19px;
+    };
+};
+
+@media (max-width: 450px) {
+    .pageContainer {
+        h1 {
+            font-size: 22px;
+        };
+        font-size: 17px;
+        padding: 40px;
+    };
+};
+
+@media (max-width: 1000px) {
+    .pageContainer {
+        h1 {
+            font-size: 22px;
+        };
+        font-size: 20px;
+        padding: 40px;
+    };
+};
